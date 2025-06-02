@@ -8,8 +8,8 @@ import model.service.ShoppingCart;
 public class Main {
     public static void main(String[] args) {
         Meat product1 = new Meat(5, 100);
-        Apple product2 = new Apple(10, 50, Colour.RED, true);
-        Apple product3 = new Apple(8, 60, Colour.GREEN, true);
+        Apple product2 = new Apple(10, 50, Colour.RED);
+        Apple product3 = new Apple(8, 60, Colour.GREEN);
         Food[] products = {product1, product2, product3};
         ShoppingCart cart = new ShoppingCart(products);
         System.out.println(String.format("Сумма покупки без скидки: %.2f", cart.getSumWithoutDiscount()));

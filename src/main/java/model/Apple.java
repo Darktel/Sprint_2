@@ -6,8 +6,8 @@ import model.constants.Discount;
 public class Apple extends Food implements Discountable{
     private String colour;
 
-    public Apple(int amount, double price, String colour, boolean isVegetarian) {
-        super(amount, price, isVegetarian);
+    public Apple(int amount, double price, String colour) {
+        super(amount, price, true);
         this.colour = colour;
     }
 
